@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(3, 22, 116);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-flex;
+            height: 50px;
+            padding: 0;
+            background: rgb(3, 22, 116);
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            overflow: hidden;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            font-weight: 750;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: #0525c7;
+        }
+
+        .button:active {
+            background: #3858fa;
+        }
+
+        .button_text,
+        .button_icon {
+            display: inline-flex;
+            align-items: center;
+            padding: 0 24px;
+            color: white;
+            height: 100%;
+        }
+
+        .button_icon {
+            font-size: 1.5em;
+            background-color: rgba(255, 255, 255, .15);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Projects</h1>
+    <h2>bloh bloh bloh</h2>
+
+    <button id="home" type="button" class="button">
+        <span class="button_text">Home</span>
+        <span class="button_icon">
+            <ion-icon name="home-outline"></ion-icon>
+        </span>
+    </button>
+
+    <script>
+        document.getElementById("home").addEventListener("click", function() {
+          window.location.href = "index.html";
+        });
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
