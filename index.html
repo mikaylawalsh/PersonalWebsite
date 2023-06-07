@@ -64,6 +64,13 @@
             display: inline-block;
         }
 
+        .img-sty {
+            width: auto;
+            height: auto;
+            border:10px solid red;
+            border-radius:10px;
+        }
+
     </style>
 </head>
 
@@ -76,6 +83,20 @@
         Outside of the classroom, I am on the Brown Field Hockey team and I love to workout. I have a golden doodle puppy named
         Bentley back home in New Jersey. 
     </body>
+
+    <img id="profile" src="IMG-5852.jpg">
+
+    <script>
+        document.getElementById("profile").addEventListener("click", function() {
+            if (document.getElementById("profile").src == "IMG-5852.jpg"){
+                document.getElementById("profile").src = "IMG-2466.JPG";
+            } else if (document.getElementById("profile").src == "IMG-2466.JPG"){
+                document.getElementById("profile").src = "bent.jpg";
+            } else {
+                document.getElementById("profile").src = "IMG-5852.jpg";
+            }
+        })
+    </script>
 
     <button id="experience" type="button" class="button">
         <span class="button_text">Experience</span>
