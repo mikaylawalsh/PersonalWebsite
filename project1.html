@@ -54,7 +54,7 @@
             background-color: rgba(255, 255, 255, .15);
         }
 
-        a:link {
+        /* a:link {
             text-decoration: none;
         }
 
@@ -68,7 +68,7 @@
 
         a:active {
             text-decoration: none;
-        }
+        } */
     </style>
 </head>
 
@@ -78,14 +78,18 @@
     <h2>Objective: Build a program that can process large numbers and that is able to add and
         subtract numbers of any size and account for carrying.</h2>
 
-    <a href="/Users/mikaylawalsh/Desktop/Summer2022/website1/index.html">
-        <button type="button" class="button">
-            <span class="button_text">Home</span>
-            <span class="button_icon">
-                <ion-icon name="home-outline"></ion-icon>
-            </span>
-        </button>
-    </a>
+    <button id="home" type="button" class="button">
+        <span class="button_text">Home</span>
+        <span class="button_icon">
+            <ion-icon name="home-outline"></ion-icon>
+        </span>
+    </button>
+
+    <script>
+        document.getElementById("home").addEventListener("click", function() {
+          window.location.href = "index.html";
+        });
+    </script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
