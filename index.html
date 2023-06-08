@@ -20,6 +20,13 @@
             font-size: 300%;
         }
 
+        img {
+            width: 30px;
+            height: auto;
+            border: 0px solid red;
+            border-radius: 10px;
+        }
+
         .button {
             display: inline-flex;
             height: 50px;
@@ -63,14 +70,6 @@
             height: auto;
             display: inline-block;
         }
-
-        .img-sty {
-            width: auto;
-            height: auto;
-            border:10px solid red;
-            border-radius:10px;
-        }
-
     </style>
 </head>
 
@@ -79,18 +78,20 @@
 
     <body>I am a computer science student at Brown University graduating in May 2025.
         Through my CS program, I am pursuing pathways in AI/ML and security. I am proficient in Python, Java, and C;
-        I can also work with HTML/CSS/JavaScript and ARM/x86 Assembly. However, my favorite langauge to work in is Python.
-        Outside of the classroom, I am on the Brown Field Hockey team and I love to workout. I have a golden doodle puppy named
-        Bentley back home in New Jersey. 
+        I can also work with HTML/CSS/JavaScript and ARM/x86 Assembly. However, my favorite langauge to work in is
+        Python.
+        Outside of the classroom, I am on the Brown Field Hockey team and I love to workout. I have a golden doodle
+        puppy named
+        Bentley back home in New Jersey.
     </body>
 
     <img id="profile" src="IMG-5852.jpg">
 
     <script>
-        document.getElementById("profile").addEventListener("click", function() {
-            if (document.getElementById("profile").src == "IMG-5852.jpg"){
+        document.getElementById("profile").addEventListener("click", function () {
+            if (document.getElementById("profile").src == "IMG-5852.jpg") {
                 document.getElementById("profile").src = "IMG-2466.JPG";
-            } else if (document.getElementById("profile").src == "IMG-2466.JPG"){
+            } else if (document.getElementById("profile").src == "IMG-2466.JPG") {
                 document.getElementById("profile").src = "bent.jpg";
             } else {
                 document.getElementById("profile").src = "IMG-5852.jpg";
@@ -106,11 +107,11 @@
     </button>
 
     <script>
-        document.getElementById("experience").addEventListener("click", function() {
-          window.location.href = "experience.html";
+        document.getElementById("experience").addEventListener("click", function () {
+            window.location.href = "experience.html";
         });
     </script>
-    
+
 
     <div class="space">
     </div>
@@ -123,8 +124,8 @@
     </button>
 
     <script>
-        document.getElementById("projects").addEventListener("click", function() {
-          window.location.href = "projects.html";
+        document.getElementById("projects").addEventListener("click", function () {
+            window.location.href = "projects.html";
         });
     </script>
 
@@ -139,8 +140,8 @@
     </button>
 
     <script>
-        document.getElementById("LinkedIn").addEventListener("click", function() {
-          window.location.href = "https://www.linkedin.com/in/mikayla-walsh-050444231/";
+        document.getElementById("LinkedIn").addEventListener("click", function () {
+            window.location.href = "https://www.linkedin.com/in/mikayla-walsh-050444231/";
         });
     </script>
 
@@ -155,8 +156,8 @@
     </button>
 
     <script>
-        document.getElementById("Resume").addEventListener("click", function() {
-          window.location.href = "Resume_new-3.pdf";
+        document.getElementById("Resume").addEventListener("click", function () {
+            window.location.href = "Resume_new-3.pdf";
         });
     </script>
 
@@ -168,8 +169,8 @@
     </button>
 
     <script>
-        document.getElementById("GitHub").addEventListener("click", function() {
-          window.location.href = "https://github.com/mikaylawalsh";
+        document.getElementById("GitHub").addEventListener("click", function () {
+            window.location.href = "https://github.com/mikaylawalsh";
         });
     </script>
 
