@@ -25,7 +25,6 @@
             height: auto;
             border: 0px solid red;
             border-radius: 10px;
-            background: url(IMG-2466.JPG)
         }
 
         .button {
@@ -91,13 +90,21 @@
 
     <script>
         function changeImage() {
-            if (document.getElementById("profile").src == "IMG-5852.jpg") {
+            if (document.getElementById("profile").src.endsWith("IMG-5852.jpg")) {
                 document.getElementById("profile").src = "IMG-2466.JPG";
             } else {
                 document.getElementById("profile").src = "bent.jpg";
             }
         }
     </script>
+
+<!-- myButton.addEventListener("click", function() {
+    if (myImg.src.endsWith("image1.jpg")) {
+      myImg.src = "image2.jpg";
+    } else {
+      myImg.src = "image1.jpg";
+    }
+  }); -->
 
     <!-- <script>
         document.getElementById("profile").addEventListener("click", function () {
