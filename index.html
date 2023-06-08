@@ -85,9 +85,20 @@
         Bentley back home in New Jersey.
     </body>
 
-    <img id="profile" src="IMG-5852.jpg">
+    <img id="profile" src="IMG-5852.jpg" onclick="changeImage()">
+
 
     <script>
+        function changeImage() {
+            if (document.getElementById("profile").src == "IMG-5852.jpg") {
+                document.getElementById("profile").src = "IMG-2466.JPG";
+            } else {
+                document.getElementById("profile").src = "bent.jpg";
+            }
+        }
+    </script>
+
+    <!-- <script>
         document.getElementById("profile").addEventListener("click", function () {
             if (document.getElementById("profile").src == "IMG-5852.jpg") {
                 document.getElementById("profile").src = "IMG-2466.JPG";
@@ -97,7 +108,7 @@
                 document.getElementById("profile").src = "IMG-5852.jpg";
             }
         })
-    </script>
+    </script> -->
 
     <button id="experience" type="button" class="button">
         <span class="button_text">Experience</span>
