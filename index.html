@@ -22,7 +22,7 @@
 
         img {
             width: 300px;
-            height: auto;
+            height: 600px;
             border: 0px solid red;
             border-radius: 10px;
         }
@@ -92,8 +92,10 @@
         function changeImage() {
             if (document.getElementById("profile").src == "IMG-5852.jpg") {
                 document.getElementById("profile").src = "IMG-2466.JPG";
-            } else {
+            } else if (document.getElementById("profile").src == "IMG-2466.JPG") {
                 document.getElementById("profile").src = "bent.jpg";
+            } else {
+                document.getElementById("profile").src = "IMG-5852.jpg";
             }
         }
     </script>
