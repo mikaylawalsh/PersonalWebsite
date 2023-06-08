@@ -20,12 +20,12 @@
             font-size: 300%;
         }
 
-        img {
+        /* img {
             width: 300px;
             height: auto;
             border: 0px solid red;
             border-radius: 10px;
-        }
+        } */
 
         .button {
             display: inline-flex;
@@ -70,6 +70,12 @@
             height: auto;
             display: inline-block;
         }
+
+        #profile {
+            height: 100px;
+            width: 200px;
+            overflow: hidden;
+        }
     </style>
 </head>
 
@@ -85,8 +91,7 @@
         Bentley back home in New Jersey.
     </body>
 
-    <img id="profile" src="IMG-5852.jpg" onclick="changeImage()">
-
+    <div id="profile"><img src="IMG-5852.jpg" onclick="changeImage()"></div>
 
     <script>
         function changeImage() {
