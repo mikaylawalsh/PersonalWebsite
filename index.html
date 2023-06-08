@@ -92,19 +92,13 @@
         function changeImage() {
             if (document.getElementById("profile").src.endsWith("IMG-5852.jpg")) {
                 document.getElementById("profile").src = "IMG-2466.JPG";
-            } else {
+            } else if (document.getElementById("profile").src.endsWith("IMG-2466.JPG")) {
                 document.getElementById("profile").src = "bent.jpg";
+            } else {
+                document.getElementById("profile").src = "IMG-5852.jpg";
             }
         }
     </script>
-
-<!-- myButton.addEventListener("click", function() {
-    if (myImg.src.endsWith("image1.jpg")) {
-      myImg.src = "image2.jpg";
-    } else {
-      myImg.src = "image1.jpg";
-    }
-  }); -->
 
     <!-- <script>
         document.getElementById("profile").addEventListener("click", function () {
