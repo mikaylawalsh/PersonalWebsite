@@ -84,11 +84,18 @@
             margin-left: 100px
         }
 
-        #rightside {
-            float: right; 
+        #container {
+            float: right;
             width: auto;
             position: relative;
             margin-right: 100px
+        }
+
+        #rightside {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 5px;
         }
 
         /* #problemchild {
@@ -103,6 +110,7 @@
 <body>
     <h1>Hey, I'm Mikayla :)</h1>
 
+    <div id=container>
     <div id=rightside>
         <div id="sty">
             <img id="profile" src="me.jpeg" onclick="changeImage()">
@@ -163,7 +171,7 @@
             window.location.href = "https://github.com/mikaylawalsh";
         });
     </script>
-    
+    </div>
 
     <div id=leftside>
     <button id="experience" type="button" class="button">
