@@ -130,52 +130,6 @@
     <h1>Hey, I'm Mikayla :)</h1>
 
     <div class="split left">
-        <button id="experience" type="button" class="button">
-            <span class="button_text">Experience</span>
-            <span class="button_icon">
-                <ion-icon name="document-outline"></ion-icon>
-            </span>
-        </button>
-
-        <script>
-            document.getElementById("experience").addEventListener("click", function () {
-                window.location.href = "experience.html";
-            });
-        </script>
-
-        <button id="projects" type="button" class="button">
-            <span class="button_text">Projects</span>
-            <span class="button_icon">
-                <ion-icon name="code-slash-outline"></ion-icon>
-            </span>
-        </button>
-
-        <script>
-            document.getElementById("projects").addEventListener("click", function () {
-                window.location.href = "projects.html";
-            });
-        </script>
-    </div>
-        
-    <div class="split middle">
-        <div id="sty">
-            <img id="profile" src="me.jpeg" onclick="changeImage()">
-
-            <script>
-                function changeImage() {
-                    if (document.getElementById("profile").src.endsWith("me.jpeg")) {
-                        document.getElementById("profile").src = "fh.jpeg";
-                    } else if (document.getElementById("profile").src.endsWith("fh.jpeg")) {
-                        document.getElementById("profile").src = "bent.jpeg";
-                    } else {
-                        document.getElementById("profile").src = "me.jpeg";
-                    }
-                }
-            </script>
-        </div>
-    </div>
-
-    <div class="split right">
         <body>I am a computer science student at Brown University graduating in May 2025.
             Through my CS program, I am pursuing pathways in AI/ML and security. I am proficient in Python, Java, and C (but 
             my favorite is Python!). I also have experience working with HTML, CSS, JavaScript, and ARM/x86 Assembly. 
@@ -218,6 +172,52 @@
             window.location.href = "https://github.com/mikaylawalsh";
         });
         </script>
+    </div>
+        
+    <div class="split middle">
+        <button id="experience" type="button" class="button">
+            <span class="button_text">Experience</span>
+            <span class="button_icon">
+                <ion-icon name="document-outline"></ion-icon>
+            </span>
+        </button>
+
+        <script>
+            document.getElementById("experience").addEventListener("click", function () {
+                window.location.href = "experience.html";
+            });
+        </script>
+
+        <button id="projects" type="button" class="button">
+            <span class="button_text">Projects</span>
+            <span class="button_icon">
+                <ion-icon name="code-slash-outline"></ion-icon>
+            </span>
+        </button>
+
+        <script>
+            document.getElementById("projects").addEventListener("click", function () {
+                window.location.href = "projects.html";
+            });
+        </script>
+    </div>
+
+    <div class="split right">
+        <div id="sty">
+            <img id="profile" src="me.jpeg" onclick="changeImage()">
+
+            <script>
+                function changeImage() {
+                    if (document.getElementById("profile").src.endsWith("me.jpeg")) {
+                        document.getElementById("profile").src = "fh.jpeg";
+                    } else if (document.getElementById("profile").src.endsWith("fh.jpeg")) {
+                        document.getElementById("profile").src = "bent.jpeg";
+                    } else {
+                        document.getElementById("profile").src = "me.jpeg";
+                    }
+                }
+            </script>
+        </div>
     </div>
     
 
