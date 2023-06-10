@@ -106,17 +106,20 @@
             position: relative;
             margin-right: 100px
         } */
-        .parent {
-            margin: 1rem;
+        .parent:after {
+            content: "";
+            display: table;
+            clear: both;
+            /* margin: 1rem;
             padding: 1rem 1rem;
-            text-align: center;
+            text-align: center; */
         }
         .division {
             float: left;
-            width: 33%;
+            width: 33.33%;
             /* display: inline-block; */
-            border: 1px solid aquamarine;
-            padding: 1rem 1rem;
+            /* border: 1px solid aquamarine;
+            padding: 1rem 1rem; */
         }
     </style>
 </head>
