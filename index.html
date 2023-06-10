@@ -77,13 +77,13 @@
             overflow: hidden;
         }
 
-        #leftside {
+        /* #leftside {
             display: table;
             margin: 0 auto;
-            /* float: left; 
+            float: left; 
             width: 100%;
             position: relative;
-            margin-left: 100px */
+            margin-left: 100px
         }
 
         #container {
@@ -98,7 +98,7 @@
             align-items: center;
             grid-template-columns: 1fr 1fr 1fr;
             column-gap: 5px;
-        }
+        } */
 
         /* #problemchild {
             float: right;
@@ -106,14 +106,30 @@
             position: relative;
             margin-right: 100px
         } */
+        .split {
+         height: 100%;
+         width: 50%;
+         position: fixed;
+         top: 0;
+        }
+        .left {
+            left: 50%;
+            background-color: yellowgreen;
+        }
+        .middle{
+            background-color: blueviolet
+        }
+        .right {
+            right: 25%;
+            background-color: aquamarine;
+        }
     </style>
 </head>
 
 <body>
     <h1>Hey, I'm Mikayla :)</h1>
 
-
-    <div id=leftside>
+    <div class="split left">
         <button id="experience" type="button" class="button">
             <span class="button_text">Experience</span>
             <span class="button_icon">
@@ -140,8 +156,8 @@
             });
         </script>
     </div>
-
-    <div id=rightside>
+        
+    <div class="split middle">
         <div id="sty">
             <img id="profile" src="me.jpeg" onclick="changeImage()">
 
@@ -157,7 +173,9 @@
                 }
             </script>
         </div>
+    </div>
 
+    <div class="split right">
         <body>I am a computer science student at Brown University graduating in May 2025.
             Through my CS program, I am pursuing pathways in AI/ML and security. I am proficient in Python, Java, and C (but 
             my favorite is Python!). I also have experience working with HTML, CSS, JavaScript, and ARM/x86 Assembly. 
