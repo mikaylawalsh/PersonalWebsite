@@ -86,7 +86,7 @@
             margin-left: 100px */
         }
 
-        /* #container {
+        #container {
             float: right;
             width: auto;
             position: relative;
@@ -98,7 +98,7 @@
             align-items: center;
             grid-template-columns: 1fr 1fr 1fr;
             column-gap: 5px;
-        } */
+        }
 
         /* #problemchild {
             float: right;
@@ -141,64 +141,66 @@
         </script>
     </div>
 
-    <div id="sty">
-        <img id="profile" src="me.jpeg" onclick="changeImage()">
+    <div id=rightside>
+        <div id="sty">
+            <img id="profile" src="me.jpeg" onclick="changeImage()">
+
+            <script>
+                function changeImage() {
+                    if (document.getElementById("profile").src.endsWith("me.jpeg")) {
+                        document.getElementById("profile").src = "fh.jpeg";
+                    } else if (document.getElementById("profile").src.endsWith("fh.jpeg")) {
+                        document.getElementById("profile").src = "bent.jpeg";
+                    } else {
+                        document.getElementById("profile").src = "me.jpeg";
+                    }
+                }
+            </script>
+        </div>
+
+        <body>I am a computer science student at Brown University graduating in May 2025.
+            Through my CS program, I am pursuing pathways in AI/ML and security. I am proficient in Python, Java, and C (but 
+            my favorite is Python!). I also have experience working with HTML, CSS, JavaScript, and ARM/x86 Assembly. 
+            Outside of the classroom, you can find me on the field hockey field with my team or in the gym! I also have a 
+            golden doodle puppy named Bentley back home in New Jersey (in the third picture!).
+        </body>
+
+        <button id="LinkedIn" type="button" class="button">
+        <span class="button_icon">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </span>
+        </button>
 
         <script>
-            function changeImage() {
-                if (document.getElementById("profile").src.endsWith("me.jpeg")) {
-                    document.getElementById("profile").src = "fh.jpeg";
-                } else if (document.getElementById("profile").src.endsWith("fh.jpeg")) {
-                    document.getElementById("profile").src = "bent.jpeg";
-                } else {
-                    document.getElementById("profile").src = "me.jpeg";
-                }
-            }
+        document.getElementById("LinkedIn").addEventListener("click", function () {
+            window.location.href = "https://www.linkedin.com/in/mikayla-walsh-050444231/";
+        });
+        </script>
+
+        <button id="Resume" type="button" class="button">
+        <span class="button_icon">
+            <ion-icon name="newspaper-outline"></ion-icon>
+        </span>
+        </button>
+
+        <script>
+        document.getElementById("Resume").addEventListener("click", function () {
+            window.location.href = "Resume_new-3.pdf";
+        });
+        </script>
+
+        <button id="GitHub" type="button" class="button">
+        <span class="button_icon">
+            <ion-icon name="logo-github"></ion-icon>
+        </span>
+        </button>
+
+        <script>
+        document.getElementById("GitHub").addEventListener("click", function () {
+            window.location.href = "https://github.com/mikaylawalsh";
+        });
         </script>
     </div>
-
-    <body>I am a computer science student at Brown University graduating in May 2025.
-        Through my CS program, I am pursuing pathways in AI/ML and security. I am proficient in Python, Java, and C (but 
-        my favorite is Python!). I also have experience working with HTML, CSS, JavaScript, and ARM/x86 Assembly. 
-        Outside of the classroom, you can find me on the field hockey field with my team or in the gym! I also have a 
-        golden doodle puppy named Bentley back home in New Jersey (in the third picture!).
-    </body>
-
-    <button id="LinkedIn" type="button" class="button">
-    <span class="button_icon">
-        <ion-icon name="logo-linkedin"></ion-icon>
-    </span>
-    </button>
-
-    <script>
-    document.getElementById("LinkedIn").addEventListener("click", function () {
-        window.location.href = "https://www.linkedin.com/in/mikayla-walsh-050444231/";
-    });
-    </script>
-
-    <button id="Resume" type="button" class="button">
-    <span class="button_icon">
-        <ion-icon name="newspaper-outline"></ion-icon>
-    </span>
-    </button>
-
-    <script>
-    document.getElementById("Resume").addEventListener("click", function () {
-        window.location.href = "Resume_new-3.pdf";
-    });
-    </script>
-
-    <button id="GitHub" type="button" class="button">
-    <span class="button_icon">
-        <ion-icon name="logo-github"></ion-icon>
-    </span>
-    </button>
-
-    <script>
-    document.getElementById("GitHub").addEventListener("click", function () {
-        window.location.href = "https://github.com/mikaylawalsh";
-    });
-    </script>
     
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
