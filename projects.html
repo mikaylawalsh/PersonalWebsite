@@ -135,21 +135,49 @@
 </head>
 
 <body>
-    <h1>Projects</h1>
-    <h2>bloh bloh bloh</h2>
-
-    <button id="home" type="button" class="button">
-        <span class="button_text">Home</span>
-        <span class="button_icon">
-            <ion-icon name="home-outline"></ion-icon>
-        </span>
-    </button>
-
-    <script>
-        document.getElementById("home").addEventListener("click", function() {
-          window.location.href = "index.html";
-        });
-    </script>
+    <div class=header>
+        <h1>Projects</h1>
+    </div>
+    <div class=parent>
+    
+        <div class="division1">
+            <button id="aboutme" type="button" class="button">
+                <span class="button_text">About me</span>
+                <span class="button_icon">
+                    <ion-icon name="person-outline"></ion-icon> 
+                </span>
+            </button>
+    
+            <script>
+                document.getElementById("aboutme").addEventListener("click", function () {
+                    window.location.href = "index.html";
+                });
+            </script>
+    
+            <button id="experience" type="button" class="button">
+                <span class="button_text">Experience</span>
+                <span class="button_icon">
+                    <ion-icon name="document-outline"></ion-icon>
+                </span>
+            </button>
+    
+            <script>
+                document.getElementById("experience").addEventListener("click", function () {
+                    window.location.href = "experience.html";
+                });
+            </script>
+        </div>
+    
+        <div class="division2">
+            <h2>A Project</h2><br><body>details<br>details<br>details</body>
+        </div>
+    
+        <div class="division3">
+            <h2>Another Project</h2><br><body>words<br>words<br>words</body>
+        </div>
+    
+        <div class=division4></div>
+    </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
