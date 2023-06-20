@@ -196,22 +196,14 @@
     
         <div class="division3">
             <div id="sty">
-                <img id="profile" src="me.jpeg" onclick="changeImage()">
+                <img id="poster" src="mmr.jpeg" onclick="changeImage()">
 
                 <script>
                     function changeImage() {
-                        if (document.getElementById("profile").src.endsWith("me.jpeg")) {
-                            document.getElementById("profile").src = "fh.jpeg";
-                        } else if (document.getElementById("profile").src.endsWith("fh.jpeg")) {
-                            document.getElementById("profile").src = "bent3.jpeg";
-                        } else if (document.getElementById("profile").src.endsWith("bent3.jpeg")) {
-                            document.getElementById("profile").src = "food.jpg";
-                        } else if (document.getElementById("profile").src.endsWith("food.jpg")) {
-                            document.getElementById("profile").src = "gym.JPG";
-                        } else if (document.getElementById("profile").src.endsWith("gym.JPG")) {
-                            document.getElementById("profile").src = "anna.JPG";
+                        if (document.getElementById("poster").src.endsWith("mmr.jpeg")) {
+                            document.getElementById("poster").src = "fh.jpeg";
                         } else {
-                            document.getElementById("profile").src = "me.jpeg";
+                            document.getElementById("poster").src = "mmr.jpeg";
                         }
                     }
                 </script>
