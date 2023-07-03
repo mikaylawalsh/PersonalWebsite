@@ -207,6 +207,18 @@
                         }
                     }
                 </script>
+
+                <img id="db" src="db1.jpeg" onclick="changeImage()">
+
+                <script>
+                    function changeImage() {
+                        if (document.getElementById("db").src.endsWith("db1.jpeg")) {
+                            document.getElementById("db").src = "db2.jpeg";
+                        } else {
+                            document.getElementById("db").src = "db1.jpeg";
+                        }
+                    }
+                </script>
             </div>
         </div>
     
