@@ -208,6 +208,17 @@
                         }
                     }
                 </script>
+                <img id="poster" src="mmr.jpeg" onclick="changeImage()">
+
+                <script>
+                    function changeImage() {
+                        if (document.getElementById("poster").src.endsWith("mmr.jpeg")) {
+                            document.getElementById("poster").src = "db1.jpeg";
+                        } else {
+                            document.getElementById("poster").src = "mmr.jpeg";
+                        }
+                    }
+                </script>
             </div>
         </div>
     
